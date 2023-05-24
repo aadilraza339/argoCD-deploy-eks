@@ -4,7 +4,7 @@ kind: Application
 metadata:
   name: my-application
   namespace: argocd
-  # Finalizer that ensures that project is not deleted until it is not referenced by any application
+  # Finalizer that ensures that project is not deleted until it is not referenced by any application 
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/aadilraza339/argoCD-deploy-eks.git
     targetRevision: HEAD
-    path: environments/dev/my-app
+    path: environments/dev/
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app
