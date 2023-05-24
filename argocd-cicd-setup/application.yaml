@@ -10,7 +10,7 @@ metadata:
 spec:
   project: my-app-project
   source:
-    repoURL: 
+    repoURL: https://github.com/aadilraza339/argoCD-deploy-eks.git
     targetRevision: HEAD
     path: environments/dev/my-app
   destination:
