@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/aadilraza339/argoCD-deploy-eks.git
     targetRevision: HEAD
-    path: environments/dev/
+    path: argocd-cicd-setup/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app
